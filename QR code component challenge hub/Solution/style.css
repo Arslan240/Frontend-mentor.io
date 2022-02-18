@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 3em 1.5em;
+  background: hsl(212, 45%, 89%);
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid red;
+}
+
+/* ==============
+    TYPOGRAPHY
+   ============== */
+
+h2 {
+  font-weight: 700;
+  color: hsl(218, 44%, 22%);
+}
+p {
+  font-size: 15px;
+  color: hsl(220, 15%, 55%);
+}
+
+/* ==============
+    LAYOUT
+   ============== */
+
+.flex-container {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  max-height: 540px;
+  min-width: 200px;
+  width: 350px;
+  border-radius: 1.2em;
+  padding: .9em 1em;
+}
+
+img {
+  /* idk why these 3 properties are affecting the layout, because I have applied height and width on flex-container it's direct container. */
+  /* width: 100%; */
+  /* max-height: 50%; */
+  /* object-fit: cover; */
+  border-radius: 1em;
+}
+
+.add-padding {
+  text-align: center;
+  padding: 1em 1.2em;
+}
+
+/* ==============
+    LAYOUT
+   ============== */
+
+@media (min-width: 375px) {
+  .body {
+    padding: 3em 1em;
+  }
+}
